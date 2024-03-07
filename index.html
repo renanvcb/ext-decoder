@@ -4,7 +4,66 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
     <title>Decodificador de texto</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header"></header>
+    <main class="container">
+      <section class="container__left">
+        <img class="container__left__logo" src="./assets/logo.svg" alt="logo" />
+        <div class="container__left__interface">
+          <textarea
+            class="container__left__interface__textarea"
+            name="target-text"
+            id="target-text"
+            cols="30"
+            rows="10"
+            placeholder="Digite seu texto"
+          ></textarea>
+          <div class="container__left__interface__label-area">
+            <img
+              class="container__left__interface__label-area__icon"
+              src="./assets/exclamation.svg"
+              alt="exclamação"
+            />
+            <label class="container__left__interface__label" for="target-text">
+              Apenas letras minúsculas, sem acento
+            </label>
+          </div>
+          <div class="container__left__interface__buttons">
+            <button class="container__left__interface__buttons__primary-btn">
+              Criptografar
+            </button>
+            <button class="container__left__interface__buttons__secondary-btn">
+              Descriptografar
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="container__right">
+        <img
+          class="container__right__image"
+          src="./assets/result_img.svg"
+          alt="an image of a person looking at a diamond through a looking glass"
+        />
+        <p class="container__right__title">Nenhuma mensagem encontrada</p>
+        <span class="container__right__subtitle"
+          >Digite um texto que você deseja criptografar ou
+          descriptografar.</span
+        >
+      </section>
+    </main>
+    <footer>
+      <p>Feito por Renan Borges</p>
+      <div>
+        <a href="https://github.com/renanvcb" target="_blank">
+          <img class="svg" src="./assets/github.svg" alt="GitHub" />
+        </a>
+        <a href="https://www.linkedin.com/in/renanvcb/" target="_blank">
+          <img class="svg" src="./assets/linkedin.svg" alt="LinkedIn" />
+        </a>
+      </div>
+    </footer>
+  </body>
 </html>
