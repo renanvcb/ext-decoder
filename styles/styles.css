@@ -156,12 +156,59 @@ footer {
   .container {
     flex-direction: column;
     height: 100%;
+    gap: 4rem;
   }
 
   .container__left {
+    align-items: normal;
+  }
+
+  .container__left__logo {
+    align-self: flex-start;
+  }
+
+  .container__left__interface {
+    padding: 0;
+    margin-top: 80px;
+  }
+
+  .container__left__interface__textarea {
+    width: 100%;
+  }
+
+  .container__left__interface__buttons {
+    gap: 1.5rem;
+  }
+
+  .container__right {
+    width: auto;
+    padding: 32px;
   }
 
   .container__right__image {
     display: none;
+  }
+
+  .container__right__title {
+    margin: 0 0 16px 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    padding: 16px;
+  }
+
+  .container__left__interface {
+    margin-top: 56px;
+  }
+
+  .container__left__interface__textarea {
+    height: 100%;
+  }
+
+  .container__left__interface__buttons {
+    flex-direction: column;
+    align-items: center;
   }
 }
