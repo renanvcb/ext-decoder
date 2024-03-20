@@ -35,9 +35,10 @@ body {
 
 .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 40px;
   height: 80vh;
+  gap: 115px;
 }
 
 .container__left {
@@ -50,24 +51,103 @@ body {
   height: 48px;
 }
 
-.container__left__interface {
+.container__left-interface {
   padding: 80px 0 0 240px;
 }
 
-.container__left__interface__textarea {
+.container__left-interface__textarea {
   background-color: transparent;
   border: none;
   text-transform: lowercase;
-  width: 100%;
+  width: 850px;
+  height: 540px;
+  color: var(--dark-blue-300);
+  font-size: 2rem;
+  resize: none;
+}
+
+.container__left-interface__textarea::placeholder {
+  color: var(--dark-blue-300);
+}
+
+.container__left-interface__label-area {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.container__left-interface__label-area__icon {
+  width: 16px;
+}
+
+.container__left-interface__label-area__label {
+  font-size: 0.75rem;
+  color: var(--gray-400);
+}
+
+.container__left-interface__buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.container__left-interface__buttons__primary-btn {
+  width: 328px;
+  background: var(--dark-blue-300);
+  color: white;
+  padding: 24px;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.container__left-interface__buttons__primary-btn:hover {
+  background: var(--dark-blue-400);
+}
+
+.container__left-interface__buttons__secondary-btn {
+  width: 328px;
+  background: var(--gray-100);
+  color: var(--dark-blue-300);
+  padding: 24px;
+  border: 1px solid var(--dark-blue-300);
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.container__left-interface__buttons__secondary-btn:hover {
+  background: var(--gray-200);
 }
 
 .container__right {
   background-color: white;
+  color: var(--gray-500);
   border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 32px;
+  width: 380px;
+}
+
+.container__right__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 32px 0 16px 0;
+}
+
+.container__right__subtitle {
+  text-align: justify;
 }
 
 footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.svg {
+  width: 36px;
 }
